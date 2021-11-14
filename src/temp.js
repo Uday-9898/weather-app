@@ -31,7 +31,7 @@ const Temp = (props) => {
 
       setTempInfo(myNewWeatherInfo);
     } catch (error) {
-      console.log(error);
+      console.log('error', error);
     }
   };
 
