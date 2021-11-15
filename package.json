@@ -1,6 +1,5 @@
 {
   "name": "temperature",
-  "homepage": "https://Uday-9898.github.io/weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

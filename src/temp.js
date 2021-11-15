@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Weathercard from "./weathercard";
 import "./style.css";
 
-const Temp = (props) => {
+const Temp = () => {
   const [searchValue, setSearchValue] = useState("Chennai");
   const [tempInfo, setTempInfo] = useState({});
 
@@ -11,7 +11,6 @@ const Temp = (props) => {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=325b7eaf4ed4082bc0ce5d9284bd85e7`;
       let res = await fetch(url);
       let data = await res.json();
-      console.log('data')
       const { temp, humidity, pressure } = data.main;
       const { main: weathermood } = data.weather[0];
       const { name } = data;
